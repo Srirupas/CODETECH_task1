@@ -1,0 +1,190 @@
+1.
+/*index.html*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODTECH - Our Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">CODTECH</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Our Courses</h2>
+        <div class="courses">
+            <div class="course-card">
+                <img src="java-logo.png" alt="Java Logo">
+                <h3>Java</h3>
+                <p>Learn the basics of Java programming language</p>
+                <p>Duration: 3 months</p>
+                <p>Price: $500</p>
+                <a href="#">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <img src="python-logo.png" alt="Python Logo">
+                <h3>Python</h3>
+                <p>Learn the basics of Python programming language</p>
+                <p>Duration: 2 months</p>
+                <p>Price: $300</p>
+                <a href="#">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <img src="cpp-logo.png" alt="C++ Logo">
+                <h3>C++</h3>
+                <p>Learn the basics of C++ programming language</p>
+                <p>Duration: 4 months</p>
+                <p>Price: $600</p>
+                <a href="#">Enroll Now</a>
+            </div>
+            <!-- Add more course cards as needed -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CODTECH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+2.
+/*style.css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course-card a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
